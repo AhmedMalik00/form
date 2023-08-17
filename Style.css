@@ -96,4 +96,9 @@
     color: white;
     border: none;
     border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.payNow:hover{
+    font-size: 24px ;
 }
