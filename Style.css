@@ -1,0 +1,99 @@
+*{
+    user-select: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    margin-top: 50px;
+    width: 600px;
+    height: 580px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.paymentMethods , .acctype , .accholder , .rounumber , .accnumber, .confirmaccnumber{
+    margin-top: 5px;
+    margin: auto;
+    width: 94%;
+    height: 80px;
+}
+.paymentMethods{
+    display: flex;
+}
+.carddiv , .achdiv{
+    cursor: pointer;
+    margin: 3px;
+    width: 50%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 3px solid #f5f2f2;
+}
+.carddiv p , .achdiv p{
+    margin-left: 8px;
+}
+.carddiv::after , .achdiv::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    transition: 0.5s;
+    background-color: #2263ea;
+    margin-bottom: -78px;
+    position: absolute;
+}
+.carddiv:hover::after , .achdiv:hover::after{
+    width: 100%;
+    border-bottom: none;
+}
+.acctype p{
+    padding: 14px 0px 10px 3%;
+    font-weight: bold;
+    font-size: 17px;
+}
+.accholder p , .rounumber p , .accnumber p , .confirmaccnumber p{
+    padding: 14px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.acctype {
+    width: 100%;
+}
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.buttons button{
+    cursor: pointer;
+    padding: 12px 5px;
+    width: 22.22%;
+    border-radius: 9px;
+    color: #2263ea;
+    background-color: #dee5f3;
+    border: none;
+    transition: 0.3s;
+}
+.buttons button:hover{
+    color: white;
+    background-color: #2263ea;
+}
+.accholder input , .rounumber input , .accnumber input , .confirmaccnumber input{
+    width: 100%;
+    background-color: #f5f2f2;
+    border-radius: 10px;
+    border: none;
+    padding: 12px 12px;
+}
+.payNow{
+    font-size: 20px;
+    background-color: #2263ea;
+    width: 94%;
+    height: 60px;
+    margin-left: 3%;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
